@@ -16,13 +16,19 @@ b,strong {
 
 #okWrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
   background: linear-gradient(337deg, #16134a, #7f9cea);
   background-size: 400% 400%;
   -webkit-animation: mainGradient 15s ease infinite;
   -moz-animation: mainGradient 15s ease infinite;
   animation: mainGradient 15s ease infinite;
+}
+
+#buttonWrapper {
+  justify-self: flex-end;
 }
 
 #everythingButtons {
