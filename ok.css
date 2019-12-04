@@ -29,7 +29,11 @@ b,strong {
 }
 
 #buttonWrapper {
+  width: 100%;
   align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #everythingButtons {
@@ -62,6 +66,14 @@ a {
   text-decoration: none;
   position: relative;
   transition: all .45s ease-Out;
+}
+
+#githubButton {
+  margin-bottom: 5px;
+}
+
+#githubButton img {
+  width: 32px;
 }
 
 .button span {
