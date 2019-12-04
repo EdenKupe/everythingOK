@@ -15,14 +15,15 @@ b,strong {
 }
 
 #okWrapper {
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  grid-template-columns: 3fr 3fr 3fr;
-  grid-template-rows: 3fr 3fr 3fr;
-  background-color: #16134a;
-  -webkit-animation: mainGradient 55s ease infinite;
-  -moz-animation: mainGradient 55s ease infinite;
-  animation: mainGradient 55s ease infinite;
+  background: linear-gradient(337deg, #16134a, #cfd6ea);
+  background-size: 400% 400%;
+  -webkit-animation: mainGradient 9s ease infinite;
+  -moz-animation: mainGradient 9s ease infinite;
+  animation: mainGradient 9s ease infinite;
 }
 
 #everythingOK {
