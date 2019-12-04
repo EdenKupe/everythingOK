@@ -41,8 +41,8 @@ b,strong {
 .button {
   display: inline-flex;
   height: 40px;
-  width: 150px;
-  border: 2px solid #BFC0C0;
+  width: 100px;
+  border: 1px solid #BFC0C0;
   margin: 10px 10px 10px 10px;
   color: #fff;
   text-transform: uppercase;
@@ -54,6 +54,7 @@ b,strong {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 a {
@@ -62,6 +63,7 @@ a {
   letter-spacing: 1px;
   position: relative;
   transition: all .45s ease-Out;
+  font-family: 'Cambo', serif;
 }
 
 #underline {
@@ -92,7 +94,7 @@ a {
 
 #okText {
   font-size: 52px;
-  font-family: "Calistoga", cursive;
+  font-family: 'Cambo', serif;
 }
 
 @-webkit-keyframes mainGradient {
