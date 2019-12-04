@@ -121,7 +121,7 @@ a {
     100%{background-position:0% 50%}
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:450px){
   #everythingOK {
     font-size: 62px;
   }
