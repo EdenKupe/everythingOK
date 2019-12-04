@@ -20,6 +20,9 @@ b,strong {
   grid-template-columns: 3fr 3fr 3fr;
   grid-template-rows: 3fr 3fr 3fr;
   background-color: #16134a;
+  -webkit-animation: mainGradient 55s ease infinite;
+  -moz-animation: mainGradient 55s ease infinite;
+  animation: mainGradient 55s ease infinite;
 }
 
 #everythingOK {
@@ -34,4 +37,20 @@ b,strong {
 #okText {
   font-size: 52px;
   font-family: "Calistoga", cursive;
+}
+
+@-webkit-keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
