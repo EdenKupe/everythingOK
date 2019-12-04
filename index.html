@@ -38,12 +38,12 @@ document.addEventListener('click', function (event) {
     if (!event.target.matches('#reallyText')) return;
     event.preventDefault();
     if (event.target.innerHTML == "Are you sure?" ) {
-      document.querySelector('#reallyText').innerHTML = "Yes, I'm sure, it's really going to be okay";
+      event.target.innerHTML = "Yes, I'm sure, it's really going to be okay";
     } else {
-      document.querySelector('#reallyText').innerHTML = "Are you sure?";
+      event.target.innerHTML = "Are you sure?";
     }
     setTimeout(function(){
-       document.querySelector('#reallyText').innerHTML = "Are you sure?";
+       event.target.innerHTML = "Are you sure?";
      }, 10000);
 });
 </script>
