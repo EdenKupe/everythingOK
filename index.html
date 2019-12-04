@@ -34,10 +34,10 @@ var sureButton = document.querySelector('#reallyText')
 document.addEventListener('click', function (event) {
     if (!event.target.matches(sureButton)) return;
     event.preventDefault();
-    sureButton.innerHTML = 'Yes, I'm sure, it's really going to be okay';
+    sureButton.innerHTML = "Yes, I'm sure, it's really going to be okay";
     setTimeout(function(){
-       sureButton.innerHTML = 'Are you sure?';
+       sureButton.innerHTML = "Are you sure?";
      }, 3000);
-}); 
+});
 </script>
 </html>
