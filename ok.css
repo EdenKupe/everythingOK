@@ -59,13 +59,13 @@ b,strong {
 }
 
 a {
+  text-decoration: none;
   position: relative;
   transition: all .45s ease-Out;
 }
 
 .button span {
   color: #BFC0C0;
-  text-decoration: none;
   letter-spacing: 1px;
   font-family: 'Cambo', serif;
 }
