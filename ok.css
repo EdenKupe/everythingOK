@@ -18,7 +18,7 @@ b,strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   background: linear-gradient(337deg, #16134a, #7f9cea);
   background-size: 400% 400%;
@@ -82,7 +82,7 @@ a {
 
 #everythingOK {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
   align-items: center;
   justify-content: center;
   grid-column: 2 / span 1;
