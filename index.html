@@ -12,6 +12,7 @@
   <div id="okWrapper">
     <div id="everythingOK">
       <span id="okText">Everything is going to be okay</span>
+      <span id="reallyText">Are you sure?</span>
     </div>
     <div id="buttonWrapper">
     <div id="everythingButtons">
@@ -27,5 +28,16 @@
   </div>
   </div>
 </body>
+<script type="text/javascript">
+var sureButton = document.querySelector('#reallyText')
 
+document.addEventListener('click', function (event)) {
+    if (!event.target.matches(sureButton)) return;
+    event.preventDefault();
+    sureButton.innerHTML = 'Yes, I'm sure, it's really going to be okay';
+    setTimeout(function(){
+       sureButton.innerHTML = 'Are you sure?';
+     }, 3000);
+} 
+</script>
 </html>

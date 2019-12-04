@@ -85,17 +85,24 @@ a {
 
 #everythingOK {
   display: flex;
+  flex-direction: column;
   margin: auto;
   align-items: center;
   justify-content: center;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   color: #fff;
-}
-
-#okText {
   font-size: 52px;
   font-family: 'Cambo', serif;
+}
+
+#reallyText {
+  font-size: 30px;
+  margin-top: 30px;
+  border: 1px solid #BFC0C0;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 @-webkit-keyframes mainGradient {
