@@ -28,7 +28,7 @@ b,strong {
 }
 
 #buttonWrapper {
-  justify-self: flex-end;
+  align-self: flex-start;
 }
 
 #everythingButtons {
@@ -43,8 +43,8 @@ b,strong {
   height: 40px;
   width: 150px;
   border: 2px solid #BFC0C0;
-  margin: 20px 20px 20px 20px;
-  color: #BFC0C0;
+  margin: 10px 10px 10px 10px;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   font-size: .8em;
