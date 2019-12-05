@@ -35,14 +35,21 @@
   </div>
 </body>
 <script type="text/javascript">
+//whenever a click happens on the doc
 document.addEventListener('click', function (event) {
+  //is it the reallyText button?
     if (!event.target.matches('#reallyText')) return;
+    //if it is, don't actually go to the link
     event.preventDefault();
+    //check instead in which state the button is in
     if (event.target.innerHTML == "Are you sure?" ) {
+      //if it's in the original state, set it to the second state
       event.target.innerHTML = "Yes, I'm sure, it's really going to be okay";
     } else {
+      //and vice versa
       event.target.innerHTML = "Are you sure?";
     }
+    //regardless of the above result, after 10 seconds, reset to the original state
     setTimeout(function(){
        event.target.innerHTML = "Are you sure?";
      }, 10000);
