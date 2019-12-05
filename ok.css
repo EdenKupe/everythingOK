@@ -23,9 +23,9 @@ b,strong {
   height: 100%;
   background: linear-gradient(337deg, #20134a, #244cb7);
   background-size: 400% 400%;
-  -webkit-animation: mainGradient 10s ease infinite;
-  -moz-animation: mainGradient 10s ease infinite;
-  animation: mainGradient 10s ease infinite;
+  -webkit-animation: mainGradient 12s ease infinite;
+  -moz-animation: mainGradient 12s ease infinite;
+  animation: mainGradient 12s ease infinite;
 }
 
 #buttonWrapper {
