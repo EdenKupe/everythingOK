@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="ok.css" type="text/css">
   <link rel="icon" type="image/png" sizes="32x32" href="thumbs-up-solid.png">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80" />
   <meta property="og:image:width" content="450"/>
   <meta property="og:image:height" content="298"/>
 </head>
@@ -44,6 +44,19 @@
   </div>
 </body>
 <script type="text/javascript">
+//simple function to control a click on the forest button
+function giveMeForest (event) {
+    event.preventDefault();
+    var wrapper = document.querySelector('#okWrapper');
+    var label = document.querySelector('.forestButton span');
+    label.classList.toggle('blueBack');
+    wrapper.classList.toggle('forestWrapper');
+    if (label.classList.contains('blueBack')) {
+        label.innerHTML = 'Forest';
+    } else {
+        label.innerHTML = 'Sky';
+    }
+}
 //whenever a click happens on the doc
 document.addEventListener('click', function (event) {
   //is it the reallyText button?
