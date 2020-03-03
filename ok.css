@@ -29,7 +29,7 @@ b,strong {
 }
 
 .forestWrapper {
-  background: no-repeat url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80);
+  background: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80);
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
