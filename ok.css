@@ -30,6 +30,7 @@ b,strong {
 
 .forestWrapper {
   background: url(/forestBack.jpg);
+  background-color: linear-gradient(337deg, #20134a, #244cb7);
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
