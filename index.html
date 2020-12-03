@@ -16,7 +16,7 @@
   <div class="okWrapper">
     <div id="everythingOK">
       <span id="okText">Everything is going to be okay</span>
-      <span id="reallyText">Are you sure?</span>
+      <span id="reallyText" onclick="amSure(event)">Are you sure?</span>
     </div>
     <div id="buttonWrapper">
     <div id="everythingButtons">
@@ -57,13 +57,10 @@ function giveMeForest (event) {
         label.innerHTML = 'Sky';
     }
 }
-//whenever a click happens on the doc
-document.addEventListener('click', function (event) {
-  //is it the reallyText button?
-    if (!event.target.matches('#reallyText')) return;
-    //if it is, don't actually go to the link
+//whenever a click happens on the "are you OK?"
+function amSure (event) {
     event.preventDefault();
-    //check instead in which state the button is in
+    //check in which state the button is in
     if (event.target.innerHTML == "Are you sure?" ) {
       //if it's in the original state, set it to the second state
       event.target.innerHTML = "Yes, I'm sure, it's really going to be okay";
